@@ -17,6 +17,9 @@ class Graph:
     def determinant(self):
         return numpy.linalg.det(self.matrix)
 
+    def determinant_times_2(self):
+        return 2 * self.determinant()
+
 g = Graph(3)
 g.add_edge(0, 1)
 g.add_edge(0, 2)
